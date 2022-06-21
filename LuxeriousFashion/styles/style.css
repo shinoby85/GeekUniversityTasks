@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+.header {
+  width: 100%;
+  height: 75px;
+  background-color: #222222; }
+  @media (max-width: 1202px) {
+    .header {
+      padding: 0 32px; } }
+  @media (max-width: 375px) {
+    .header {
+      padding: 0 16px; } }
+  .header-container {
+    width: 100%;
+    max-width: 1138px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto; }
+    .header-container .header-left__logo {
+      width: 44px;
+      height: 38px;
+      margin-right: 41px; }
+    .header-container .header-left__search {
+      width: 26px; }
+    .header-container .header-nav {
+      width: 162px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      @media (max-width: 375px) {
+        .header-container .header-nav {
+          width: 32px; }
+          .header-container .header-nav-profile {
+            display: none; }
+          .header-container .header-nav-cart {
+            display: none; } }
+      .header-container .header-nav .burger-menu {
+        width: 32px;
+        height: 23px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; }
+        .header-container .header-nav .burger-menu__line {
+          width: 32px;
+          height: 3px;
+          background-color: #E8E8E8; }
+      .header-container .header-nav-profile {
+        width: 29px;
+        height: 29px;
+        background-image: url("../images/profile.png");
+        background-repeat: no-repeat;
+        -webkit-background-size: cover;
+        background-size: cover; }
+      .header-container .header-nav-cart {
+        width: 32px;
+        height: 29px;
+        background-image: url("../images/card.png");
+        background-repeat: no-repeat;
+        -webkit-background-size: cover;
+        background-size: cover;
+        position: relative; }
+        .header-container .header-nav-cart__quantity {
+          width: 19px;
+          height: 19px;
+          background-color: #F16D7F;
+          color: #FFF;
+          text-align: center;
+          font-family: Lato;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 14px;
+          border-radius: 50%;
+          position: absolute;
+          right: -9.5px;
+          top: -9.5px;
+          padding: 2px; }
+
+.main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto; }
+
+.the-brand {
+  width: 100%;
+  height: 764px;
+  display: flex;
+  justify-content: flex-start;
+  background-color: #F1E4E6; }
+  @media (max-width: 1340px) {
+    .the-brand {
+      height: 367.57px;
+      align-items: center; } }
+  @media (max-width: 765px) {
+    .the-brand {
+      justify-content: center; } }
+  .the-brand__img {
+    height: 100%;
+    margin-right: 60px; }
+    @media (max-width: 1340px) {
+      .the-brand__img {
+        margin-right: 39px; } }
+    @media (max-width: 765px) {
+      .the-brand__img {
+        display: none; } }
+  .the-brand__text {
+    height: 92px;
+    margin-top: 290px;
+    position: relative; }
+    @media (max-width: 1340px) {
+      .the-brand__text {
+        margin: 0; } }
+    .the-brand__text_line {
+      width: 12px;
+      height: 100%;
+      background-color: #F16D7F;
+      position: absolute; }
+      @media (max-width: 375px) {
+        .the-brand__text_line {
+          height: 61px;
+          top: 3px; } }
+    .the-brand__text_h {
+      font-family: 'Lato';
+      font-style: normal;
+      font-weight: 900;
+      font-size: 48px;
+      line-height: 58px;
+      color: #222222;
+      margin-left: 28px; }
+      @media (max-width: 1340px) {
+        .the-brand__text_h {
+          font-size: 44px;
+          line-height: 53px; } }
+      @media (max-width: 375px) {
+        .the-brand__text_h {
+          font-size: 38px;
+          line-height: 45.6px; } }
+    .the-brand__text_p {
+      font-family: 'Lato';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 31px;
+      line-height: 32.2px;
+      margin-left: 28px;
+      color: #222222; }
+      .the-brand__text_p span {
+        color: #F16D7F; }
+      @media (max-width: 1340px) {
+        .the-brand__text_p {
+          font-size: 24px;
+          line-height: 28.8px; } }
+      @media (max-width: 375px) {
+        .the-brand__text_p {
+          font-size: 20px;
+          line-height: 24px; } }
+
+/*# sourceMappingURL=style.css.map */
