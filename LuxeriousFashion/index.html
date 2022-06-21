@@ -3,19 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link href="style.css">
+    <link href="./styles/style.css" rel="stylesheet">
 </head>
 <body>
 <header class="header">
     <div class="header-container">
         <div class="header-left">
-            <img src="" alt="" class="header-left__logo">
-            <img src="" alt="" class="header-left__search">
+            <img class="header-left__logo" src="images/logo.png" alt="Logo">
+            <img class="header-left__search" src="images/search.png" alt="Search">
         </div>
         <nav class="header-nav">
-            <menu class="header-nav__menu"></menu>
+            <menu class="header-nav__menu burger-menu">
+                <div class="burger-menu__line"></div>
+                <div class="burger-menu__line"></div>
+                <div class="burger-menu__line"></div>
+            </menu>
             <div class="header-nav-profile"></div>
-            <div class="header-nav-cart"></div>
+            <div class="header-nav-cart">
+                <div class="header-nav-cart__quantity">5</div>
+            </div>
         </nav>
     </div>
 </header>
