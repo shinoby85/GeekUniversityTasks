@@ -49,6 +49,15 @@ $color2: #222222;
       display: flex;
       justify-content: space-between;
       align-items: center;
+      @media (max-width: 375px) {
+        width: 32px;
+        &-profile{
+          display: none;
+        }
+        &-cart{
+          display: none;
+        }
+      }
       .burger-menu{
         width: 32px;
         height: 23px;
