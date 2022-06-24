@@ -1,12 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+@import "./fonts";
+@import './variables';
 
-$bgr-color1: #222222;
-$bgr-color2: #F1E4E6;
-$bgr-color3: #E5E5E5;
-$bgr-color4: #222224;
-$bgr-color4: #F16D7F;
-$color1: #F16D7F;
-$color2: #222222;
 
 *{
   -webkit-box-sizing: border-box;
@@ -15,50 +9,48 @@ $color2: #222222;
   margin: 0;
   padding: 0;
 }
-.header{
+.header {
   width: 100%;
   height: 75px;
-  background-color: $bgr-color1;
+  background-color: $colorBlack;
   @media (max-width: 1202px) {
     padding: 0 32px;
   }
-  @media (max-width: 375px){
+  @media (max-width: 375px) {
     padding: 0 16px;
   }
-  &-container{
-    width: 100%;
-    max-width: 1138px;
+}
+.container{
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.header__container{
     height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-    .header-left{
+    .header__left{
 
-      &__logo{
+      .header__logo{
         width: 44px;
         height: 38px;
         margin-right: 41px;
       }
-      &__search{
+      .header__search{
         width: 26px;
       }
     }
-    .header-nav{
+    .header__nav{
       width: 162px;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      @media (max-width: 375px) {
-        width: 32px;
-        &-profile{
-          display: none;
-        }
-        &-cart{
-          display: none;
-        }
-      }
-      .burger-menu{
+      .menu{
         width: 32px;
         height: 23px;
         display: flex;
@@ -70,7 +62,16 @@ $color2: #222222;
           background-color: #E8E8E8;
         }
       }
-      &-profile{
+      @media (max-width: 375px) {
+        width: 32px;
+        .nav__profile{
+          display: none;
+        }
+        .nav__cart{
+          display: none;
+        }
+      }
+      .nav__profile{
         width: 29px;
         height: 29px;
         background-image: url("../images/profile.png");
@@ -78,7 +79,7 @@ $color2: #222222;
         -webkit-background-size: cover;
         background-size: cover;
       }
-      &-cart{
+      .cart{
         width: 32px;
         height: 29px;
         background-image: url("../images/card.png");
@@ -89,8 +90,8 @@ $color2: #222222;
         &__quantity{
           width: 19px;
           height: 19px;
-          background-color: #F16D7F;
-          color: #FFF;
+          background-color: $colorPink;
+          color: $colorWhite;
           text-align: center;
           font-family: Lato;
           font-weight: 400;
@@ -105,7 +106,7 @@ $color2: #222222;
       }
     }
   }
-}
+
 .main{
   width: 100%;
   display: flex;
@@ -117,76 +118,115 @@ $color2: #222222;
   height: 764px;
   display: flex;
   justify-content: flex-start;
-  background-color: $bgr-color2;
-  @media (max-width: 1340px) {
-    height: 367.57px;
-    align-items: center;
+  background-color: $colorLightPink;
+  @media (max-width: 1202px) {
+    padding: 0 32px;
   }
-  @media (max-width: 765px){
+  @media (max-width: 1000px) {
+    height: 367.57px;
     justify-content: center;
   }
-  &__img{
-    height: 100%;
-    margin-right: 60px;
-    @media (max-width: 1340px){
-      margin-right: 39px;
-    }
-    @media (max-width: 765px){
-      display: none;
-    }
+  @media (max-width: 375px) {
+    padding: 0 16px;
   }
-  &__text{
-    height: 92px;
-    margin-top: 290px;
-    position: relative;
-    @media (max-width: 1340px){
-      margin: 0;
+  &_container{
+    display: flex;
+    @media (max-width: 1000px){
+      max-width: 905px;
     }
-    &_line{
-      width: 12px;
+    .the-brand_block1{
+      width: 50%;
       height: 100%;
-      background-color: #F16D7F;
-      position: absolute;
-      @media (max-width: 375px){
-        height: 61px;
-        top: 3px;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      @media (max-width: 690px){
+        display: none;
+      }
+      .the-brand__img{
+        height: 100%;
+        margin-right: 60px;
+        object-fit: cover;
+        object-position: -218px;
+        @media (max-width: 1000px){
+          object-position: -32px;
+        }
       }
     }
-    &_h{
-      font-family: 'Lato';
-      font-style: normal;
-      font-weight: 900;
-      font-size: 48px;
-      line-height: 58px;
-      color: $color2;
-      margin-left: 28px;
-      @media (max-width: 1340px){
-        font-size: 44px;
-        line-height: 53px;
+    .the-brand_block2{
+      width: 50%;
+      height: 100%;
+      display: flex;
+      justify-content: flex-start;
+      @media (max-width: 1000px){
+        justify-content: flex-end;
+        align-items: center;
       }
-      @media (max-width: 375px){
-        font-size: 38px;
-        line-height: 45.6px;
+      @media (max-width: 690px){
+        width: 100%;
+        justify-content: center;
       }
-    }
-    &_p{
-      font-family: 'Lato';
-      font-style: normal;
-      font-weight: 700;
-      font-size: 31px;
-      line-height: 32.2px;
-      margin-left: 28px;
-      color: $color2;
-      & span{
-        color: $color1;
-      }
-      @media (max-width: 1340px){
-        font-size: 24px;
-        line-height: 28.8px;
-      }
-      @media (max-width: 375px){
-        font-size: 20px;
-        line-height: 24px;
+      .the-brand_text-block{
+        display: flex;
+        flex-direction: column;
+        width: 405px;
+        height: 92px;
+        position: relative;
+        margin: 290px 0 0 63px;
+        @media (max-width: 1000px){
+          margin: 0;
+          width: 310px;
+        }
+        @media (max-width: 375px){
+          width: 270px;
+        }
+        .the-brand__line{
+          width: 12px;
+          height: 100%;
+          background-color: $colorPink;
+          position: absolute;
+          @media (max-width: 375px){
+            height: 61px;
+            top: 2px;
+          }
+        }
+        .the-brand__text1{
+          font-family: 'Lato';
+          font-style: normal;
+          font-weight: 900;
+          font-size: 48px;
+          line-height: 58px;
+          color: $colorBlack;
+          margin-left: 28px;
+          @media (max-width: 1000px){
+            font-size: 44px;
+            line-height: 53px;
+          }
+          @media (max-width: 375px){
+            font-size: 38px;
+            line-height: 45.6px;
+          }
+        }
+        .the-brand__text2{
+          font-family: 'Lato';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 31px;
+          line-height: 32.2px;
+          margin-left: 28px;
+          color: $colorBlack;
+          & span{
+            color: $colorPink;
+          }
+          @media (max-width: 1000px){
+            font-size: 24px;
+            line-height: 28.8px;
+          }
+          @media (max-width: 375px){
+            font-size: 20px;
+            line-height: 24px;
+          }
+        }
       }
     }
   }
