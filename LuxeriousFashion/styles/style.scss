@@ -9,6 +9,14 @@
   margin: 0;
   padding: 0;
 }
+.container{
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 .header {
   width: 100%;
   height: 75px;
@@ -19,215 +27,81 @@
   @media (max-width: 375px) {
     padding: 0 16px;
   }
-}
-.container{
-  width: 100%;
-  max-width: 1140px;
-  margin: 0 auto;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-.header__container{
+  &__container{
     height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-    .header__left{
-
-      .header__logo{
-        width: 44px;
-        height: 38px;
-        margin-right: 41px;
-      }
-      .header__search{
-        width: 26px;
-      }
+  }
+  &__left{}
+  &__logo{
+    width: 44px;
+    height: 38px;
+    margin-right: 41px;
+  }
+  &__search{
+    width: 26px;
+  }
+  &__nav{}
+}
+.nav {
+  width: 162px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media (max-width: 375px) {
+    width: 32px;
+    &__profile{
+      display: none;
     }
-    .header__nav{
-      width: 162px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      .menu{
-        width: 32px;
-        height: 23px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        &__line{
-          width: 32px;
-          height: 3px;
-          background-color: #E8E8E8;
-        }
-      }
-      @media (max-width: 375px) {
-        width: 32px;
-        .nav__profile{
-          display: none;
-        }
-        .nav__cart{
-          display: none;
-        }
-      }
-      .nav__profile{
-        width: 29px;
-        height: 29px;
-        background-image: url("../images/profile.png");
-        background-repeat: no-repeat;
-        -webkit-background-size: cover;
-        background-size: cover;
-      }
-      .cart{
-        width: 32px;
-        height: 29px;
-        background-image: url("../images/card.png");
-        background-repeat: no-repeat;
-        -webkit-background-size: cover;
-        background-size: cover;
-        position: relative;
-        &__quantity{
-          width: 19px;
-          height: 19px;
-          background-color: $colorPink;
-          color: $colorWhite;
-          text-align: center;
-          font-family: Lato;
-          font-weight: 400;
-          font-size: 12px;
-          line-height: 14px;
-          border-radius: 50%;
-          position: absolute;
-          right: -9.5px;
-          top: -9.5px;
-          padding: 2px;
-        }
-      }
+    &__cart{
+      display: none;
     }
   }
-
-.main{
-  width: 100%;
+  &__profile{
+    width: 29px;
+    height: 29px;
+    background-image: url("../images/profile.png");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+  }
+}
+.menu{
+  width: 32px;
+  height: 23px;
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
+  justify-content: space-between;
+  &__line{
+    width: 32px;
+    height: 3px;
+    background-color: #E8E8E8;
+  }
 }
-.the-brand{
-  width: 100%;
-  height: 764px;
-  display: flex;
-  justify-content: flex-start;
-  background-color: $colorLightPink;
-  @media (max-width: 1202px) {
-    padding: 0 32px;
-  }
-  @media (max-width: 1000px) {
-    height: 367.57px;
-    justify-content: center;
-  }
-  @media (max-width: 375px) {
-    padding: 0 16px;
-  }
-  &_container{
-    display: flex;
-    @media (max-width: 1000px){
-      max-width: 905px;
-    }
-    .the-brand_block1{
-      width: 50%;
-      height: 100%;
-      -webkit-box-sizing: border-box;
-      -moz-box-sizing: border-box;
-      box-sizing: border-box;
-      @media (max-width: 690px){
-        display: none;
-      }
-      .the-brand__img{
-        height: 100%;
-        margin-right: 60px;
-        object-fit: cover;
-        object-position: -218px;
-        @media (max-width: 1000px){
-          object-position: -32px;
-        }
-      }
-    }
-    .the-brand_block2{
-      width: 50%;
-      height: 100%;
-      display: flex;
-      justify-content: flex-start;
-      @media (max-width: 1000px){
-        justify-content: flex-end;
-        align-items: center;
-      }
-      @media (max-width: 690px){
-        width: 100%;
-        justify-content: center;
-      }
-      .the-brand_text-block{
-        display: flex;
-        flex-direction: column;
-        width: 405px;
-        height: 92px;
-        position: relative;
-        margin: 290px 0 0 63px;
-        @media (max-width: 1000px){
-          margin: 0;
-          width: 310px;
-        }
-        @media (max-width: 375px){
-          width: 270px;
-        }
-        .the-brand__line{
-          width: 12px;
-          height: 100%;
-          background-color: $colorPink;
-          position: absolute;
-          @media (max-width: 375px){
-            height: 61px;
-            top: 2px;
-          }
-        }
-        .the-brand__text1{
-          font-family: 'Lato';
-          font-style: normal;
-          font-weight: 900;
-          font-size: 48px;
-          line-height: 58px;
-          color: $colorBlack;
-          margin-left: 28px;
-          @media (max-width: 1000px){
-            font-size: 44px;
-            line-height: 53px;
-          }
-          @media (max-width: 375px){
-            font-size: 38px;
-            line-height: 45.6px;
-          }
-        }
-        .the-brand__text2{
-          font-family: 'Lato';
-          font-style: normal;
-          font-weight: 700;
-          font-size: 31px;
-          line-height: 32.2px;
-          margin-left: 28px;
-          color: $colorBlack;
-          & span{
-            color: $colorPink;
-          }
-          @media (max-width: 1000px){
-            font-size: 24px;
-            line-height: 28.8px;
-          }
-          @media (max-width: 375px){
-            font-size: 20px;
-            line-height: 24px;
-          }
-        }
-      }
-    }
+.cart{
+  width: 32px;
+  height: 29px;
+  background-image: url("../images/card.png");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  position: relative;
+  &__quantity{
+    width: 19px;
+    height: 19px;
+    background-color: $colorPink;
+    color: $colorWhite;
+    text-align: center;
+    font-family: Lato;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    border-radius: 50%;
+    position: absolute;
+    right: -9.5px;
+    top: -9.5px;
+    padding: 2px;
   }
 }
