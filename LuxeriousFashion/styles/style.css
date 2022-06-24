@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+.header {
+  width: 100%;
+  height: 75px;
+  background-color: #222222; }
+  @media (max-width: 1202px) {
+    .header {
+      padding: 0 32px; } }
+  @media (max-width: 375px) {
+    .header {
+      padding: 0 16px; } }
+  .header-container {
+    width: 100%;
+    max-width: 1138px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto; }
+    .header-container .header-left__logo {
+      width: 44px;
+      height: 38px;
+      margin-right: 41px; }
+    .header-container .header-left__search {
+      width: 26px; }
+    .header-container .header-nav {
+      width: 162px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      @media (max-width: 375px) {
+        .header-container .header-nav {
+          width: 32px; }
+          .header-container .header-nav-profile {
+            display: none; }
+          .header-container .header-nav-cart {
+            display: none; } }
+      .header-container .header-nav .burger-menu {
+        width: 32px;
+        height: 23px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; }
+        .header-container .header-nav .burger-menu__line {
+          width: 32px;
+          height: 3px;
+          background-color: #E8E8E8; }
+      .header-container .header-nav-profile {
+        width: 29px;
+        height: 29px;
+        background-image: url("../images/profile.png");
+        background-repeat: no-repeat;
+        -webkit-background-size: cover;
+        background-size: cover; }
+      .header-container .header-nav-cart {
+        width: 32px;
+        height: 29px;
+        background-image: url("../images/card.png");
+        background-repeat: no-repeat;
+        -webkit-background-size: cover;
+        background-size: cover;
+        position: relative; }
+        .header-container .header-nav-cart__quantity {
+          width: 19px;
+          height: 19px;
+          background-color: #F16D7F;
+          color: #FFF;
+          text-align: center;
+          font-family: Lato;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 14px;
+          border-radius: 50%;
+          position: absolute;
+          right: -9.5px;
+          top: -9.5px;
+          padding: 2px; }
+
+/*# sourceMappingURL=style.css.map */
