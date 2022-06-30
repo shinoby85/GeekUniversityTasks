@@ -33,9 +33,11 @@
   .header__logo {
     width: 44px;
     height: 38px;
-    margin-right: 41px; }
+    margin-right: 41px;
+    cursor: pointer; }
   .header__search {
-    width: 26px; }
+    width: 26px;
+    cursor: pointer; }
 
 .nav {
   width: 162px;
@@ -55,14 +57,16 @@
     background-image: url("../images/profile.png");
     background-repeat: no-repeat;
     -webkit-background-size: cover;
-    background-size: cover; }
+    background-size: cover;
+    cursor: pointer; }
 
 .menu {
   width: 32px;
   height: 23px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; }
+  justify-content: space-between;
+  cursor: pointer; }
   .menu__line {
     width: 32px;
     height: 3px;
@@ -75,7 +79,8 @@
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
-  position: relative; }
+  position: relative;
+  cursor: pointer; }
   .cart__quantity {
     width: 19px;
     height: 19px;
@@ -217,5 +222,113 @@
           line-height: 24px; } }
       .the-brand__text span span {
         color: #F16D7F; }
+
+.category {
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 260px 180px;
+  grid-gap: 30px;
+  align-content: space-between;
+  justify-content: space-between;
+  margin: 65px 0 96px 0; }
+  @media (max-width: 1220px) {
+    .category {
+      margin: 19.95px 16.5px 155px 16.5px; } }
+  @media (max-width: 1000px) {
+    .category {
+      grid-template-rows: 167px 116px;
+      grid-gap: 18.9px; } }
+  @media (max-width: 500px) {
+    .category {
+      grid-template-columns: 1fr;
+      grid-template-rows: 247px 247px 247px 111px;
+      margin: 64px 16px; } }
+  .category__women {
+    background-image: url("../images/categories-women.png");
+    background-repeat: no-repeat;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-size: cover;
+    background-position: center; }
+    @media (max-width: 500px) {
+      .category__women {
+        grid-row-start: 1;
+        grid-row-end: 2; } }
+  .category__men {
+    background-image: url("../images/categories-men.png");
+    background-repeat: no-repeat;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-size: cover;
+    background-position: center; }
+    @media (max-width: 500px) {
+      .category__men {
+        grid-row-start: 2;
+        grid-row-end: 3; } }
+  .category__kids {
+    background-image: url("../images/categories-kids.png");
+    background-repeat: no-repeat;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-size: cover;
+    background-position: center; }
+    @media (max-width: 500px) {
+      .category__kids {
+        grid-row-start: 3;
+        grid-row-end: 4; } }
+  .category__accessories {
+    background-image: url("../images/categories-accessories.png");
+    background-repeat: no-repeat;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-size: cover;
+    background-position: center;
+    grid-column-start: 1;
+    grid-column-end: 4; }
+    @media (max-width: 500px) {
+      .category__accessories {
+        grid-row-start: 4;
+        grid-row-end: 5;
+        grid-column-start: 1;
+        grid-column-end: 2; } }
+
+.card {
+  position: relative; }
+  @media (max-width: 1000px) {
+    .card {
+      background-position: top; } }
+  .card__overlap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: rgba(33, 22, 22, 0.7);
+    opacity: 1;
+    transition: opacity 1s; }
+    .card__overlap:hover {
+      opacity: 0;
+      transition: opacity 1s; }
+  .card__name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .card__text1 {
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFF; }
+  .card__text2 {
+    font-family: 'Lato';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28.8px;
+    text-align: center;
+    color: #F16D7F; }
 
 /*# sourceMappingURL=style.css.map */

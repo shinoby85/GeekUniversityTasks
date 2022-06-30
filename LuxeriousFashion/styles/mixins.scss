@@ -1,0 +1,12 @@
+@mixin gridProductCategory($imgSrc,$grs:1,$gre:2){
+  background-image: url($imgSrc);
+  background-repeat: no-repeat;
+  grid-row-start: $grs;
+  grid-row-end: $gre;
+  background-size: cover;
+  background-position: center;
+}
+@mixin gridProductCategory375px($grs,$gre){
+  grid-row-start: $grs;
+  grid-row-end: $gre;
+}
