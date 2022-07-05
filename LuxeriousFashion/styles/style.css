@@ -355,7 +355,7 @@
     display: flex;
     flex-direction: column;
     align-items: center; }
-    @media (max-width: 768px) {
+    @media (max-width: 991.98px) {
       .advantages__item {
         padding-top: 48px; } }
   .advantages__title {
@@ -371,5 +371,94 @@
     text-align: center;
     color: #FFF;
     padding-top: 16px; }
+
+.subscribe {
+  min-height: 450px;
+  width: 100%;
+  background-image: url("./../images/subscribe_bg.jpg");
+  background-size: cover;
+  background-position: 0 100%; }
+  .subscribe__container {
+    padding: 86px 25px;
+    display: flex;
+    justify-content: space-between; }
+    @media (max-width: 991.98px) {
+      .subscribe__container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: normal;
+        gap: 48px;
+        padding: 64px 25px; } }
+  .subscribe__side {
+    max-width: 370px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center; }
+  .subscribe__image-wrapper {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    overflow: hidden; }
+  .subscribe__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+  .subscribe__quote {
+    padding-top: 30px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    max-width: 360px;
+    width: 100%; }
+    .subscribe__quote .quote_italic {
+      font-style: italic; }
+  .subscribe__text {
+    margin-top: 30px;
+    font-size: 18px;
+    line-height: 167.2%;
+    text-align: center;
+    color: #222222; }
+    .subscribe__text_bold {
+      font-weight: 700;
+      font-size: 24px; }
+  .subscribe .email__wrapper {
+    margin-top: 32px;
+    width: 100%;
+    max-width: 356px;
+    height: 50px;
+    border-radius: 25px;
+    overflow: hidden;
+    display: flex; }
+    @media (max-width: 575.98px) {
+      .subscribe .email__wrapper {
+        max-width: 320px;
+        height: 46px; } }
+  .subscribe .email__input {
+    width: 72%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background-color: #E1E1E1;
+    padding-left: 22px;
+    padding-right: 22px; }
+  .subscribe .email__button {
+    border: none;
+    outline: none;
+    width: 28%;
+    height: 100%;
+    background-color: #F16D7F;
+    text-align: center;
+    cursor: pointer; }
+    .subscribe .email__button[value] {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      color: #FFF; }
+    .subscribe .email__button:hover {
+      opacity: 0.8; }
 
 /*# sourceMappingURL=style.css.map */
