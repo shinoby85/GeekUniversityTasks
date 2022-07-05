@@ -9,6 +9,8 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: Lato;
+
 }
 
 .container {
@@ -108,13 +110,13 @@
   background-size: cover;
   position: relative;
   cursor: pointer;
+
   &__quantity {
     width: 19px;
     height: 19px;
     background-color: $colorPink;
     color: $colorWhite;
     text-align: center;
-    font-family: Lato;
     font-weight: 400;
     font-size: 12px;
     line-height: 14px;
@@ -230,7 +232,6 @@
   }
 
   &__text {
-    font-family: 'Lato';
     font-style: normal;
     font-weight: 900;
     font-size: 48px;
@@ -250,7 +251,6 @@
     }
 
     & span {
-      font-family: 'Lato';
       font-style: normal;
       font-weight: 700;
       font-size: 31px;
@@ -286,53 +286,56 @@
   @media (max-width: 1220px) {
     margin: 19.95px 16.5px 155px 16.5px;
   }
-  @media (max-width: 1000px){
+  @media (max-width: 1000px) {
     grid-template-rows: 167px 116px;
     grid-gap: 18.9px;
   }
-  @media (max-width: 500px){
+  @media (max-width: 500px) {
     grid-template-columns: 1fr;
     grid-template-rows: 247px 247px 247px 111px;
     margin: 64px 16px;
   }
+
   &__women {
     @include gridProductCategory("../images/categories-women.png");
-    @media (max-width: 500px){
-      @include gridProductCategory375px(1,2);
+    @media (max-width: 500px) {
+      @include gridProductCategory375px(1, 2);
     }
   }
 
   &__men {
     @include gridProductCategory("../images/categories-men.png");
-    @media (max-width: 500px){
-      @include gridProductCategory375px(2,3);
+    @media (max-width: 500px) {
+      @include gridProductCategory375px(2, 3);
     }
   }
 
   &__kids {
     @include gridProductCategory("../images/categories-kids.png");
-    @media (max-width: 500px){
-      @include gridProductCategory375px(3,4);
+    @media (max-width: 500px) {
+      @include gridProductCategory375px(3, 4);
     }
   }
 
   &__accessories {
-    @include gridProductCategory("../images/categories-accessories.png",2,3);
+    @include gridProductCategory("../images/categories-accessories.png", 2, 3);
     grid-column-start: 1;
     grid-column-end: 4;
-    @media (max-width: 500px){
-      @include gridProductCategory375px(4,5);
+    @media (max-width: 500px) {
+      @include gridProductCategory375px(4, 5);
       grid-column-start: 1;
       grid-column-end: 2;
     }
   }
 }
-.card{
+
+.card {
   position: relative;
-  @media (max-width: 1000px){
+  @media (max-width: 1000px) {
     background-position: top;
   }
-  &__overlap{
+
+  &__overlap {
     width: 100%;
     height: 100%;
     display: flex;
@@ -342,31 +345,69 @@
     background-color: rgba(33, 22, 22, 0.7);
     opacity: 1;
     transition: opacity 1s;
-    &:hover{
+
+    &:hover {
       opacity: 0;
       transition: opacity 1s;
     }
   }
-  &__name{
+
+  &__name {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  &__text1{
-    font-family: 'Lato';
+
+  &__text1 {
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
     text-align: center;
     color: $colorWhite;
   }
-  &__text2{
-    font-family: 'Lato';
+
+  &__text2 {
     font-weight: 700;
     font-size: 24px;
     line-height: 28.8px;
     text-align: center;
     color: $colorPink;
+  }
+}
+
+.advantages {
+  min-height: 340px;
+  width: 100%;
+  background-color: $colorBlack;
+
+  &__container {
+    padding-top: 103px;
+    padding-bottom: 104px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item{
+    width: 100%;
+    max-width: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__title{
+    font-weight: 400;
+    font-size: 19.96px;
+    line-height: 24px;
+    color: $colorWhite;
+    padding-top: 28px;
+  }
+  &__text{
+    font-weight: 300;
+    font-size: 13.972px;
+    line-height: 17px;
+    text-align: center;
+    color: $colorWhite;
+    padding-top: 16px;
   }
 }
