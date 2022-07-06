@@ -76,7 +76,7 @@
   &__profile {
     width: 29px;
     height: 29px;
-    background-image: url("../images/profile.png");
+    background-image: url("../images/profile.svg");
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
@@ -102,7 +102,7 @@
 .cart {
   width: 32px;
   height: 29px;
-  background-image: url("../images/card.png");
+  background-image: url("../images/card.svg");
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
@@ -296,28 +296,28 @@
     margin: 64px 16px;
   }
   &__women {
-    @include gridProductCategory("../images/categories-women.png");
+    @include gridProductCategory("../images/categories-women.jpg");
     @media (max-width: 500px){
       @include gridProductCategory375px(1,2);
     }
   }
 
   &__men {
-    @include gridProductCategory("../images/categories-men.png");
+    @include gridProductCategory("../images/categories-men.jpg");
     @media (max-width: 500px){
       @include gridProductCategory375px(2,3);
     }
   }
 
   &__kids {
-    @include gridProductCategory("../images/categories-kids.png");
+    @include gridProductCategory("../images/categories-kids.jpg");
     @media (max-width: 500px){
       @include gridProductCategory375px(3,4);
     }
   }
 
   &__accessories {
-    @include gridProductCategory("../images/categories-accessories.png",2,3);
+    @include gridProductCategory("../images/categories-accessories.jpg",2,3);
     grid-column-start: 1;
     grid-column-end: 4;
     @media (max-width: 500px){
@@ -440,22 +440,22 @@
     position: relative;
   }
   &__card1{
-    background: url("../images/product1.png") 100% no-repeat;
+    background: url("../images/product1.jpg") 100% no-repeat;
   }
   &__card2{
-    background: url("../images/product2.png") 100% no-repeat;
+    background: url("../images/product2.jpg") 100% no-repeat;
   }
   &__card3{
-    background: url("../images/product3.png") 100% no-repeat;
+    background: url("../images/product3.jpg") 100% no-repeat;
   }
   &__card4{
-    background: url("../images/product4.png") 100% no-repeat;
+    background: url("../images/product4.jpg") 100% no-repeat;
   }
   &__card5{
-    background: url("../images/product5.png") 100% no-repeat;
+    background: url("../images/product5.jpg") 100% no-repeat;
   }
   &__card6{
-    background: url("../images/product6.png") 100% no-repeat;
+    background: url("../images/product6.jpg") 100% no-repeat;
   }
   &__photo{
     width: 100%;

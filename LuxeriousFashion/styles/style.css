@@ -54,7 +54,7 @@
   .nav__profile {
     width: 29px;
     height: 29px;
-    background-image: url("../images/profile.png");
+    background-image: url("../images/profile.svg");
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
@@ -75,7 +75,7 @@
 .cart {
   width: 32px;
   height: 29px;
-  background-image: url("../images/card.png");
+  background-image: url("../images/card.svg");
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
@@ -245,7 +245,7 @@
       grid-template-rows: 247px 247px 247px 111px;
       margin: 64px 16px; } }
   .category__women {
-    background-image: url("../images/categories-women.png");
+    background-image: url("../images/categories-women.jpg");
     background-repeat: no-repeat;
     grid-row-start: 1;
     grid-row-end: 2;
@@ -256,7 +256,7 @@
         grid-row-start: 1;
         grid-row-end: 2; } }
   .category__men {
-    background-image: url("../images/categories-men.png");
+    background-image: url("../images/categories-men.jpg");
     background-repeat: no-repeat;
     grid-row-start: 1;
     grid-row-end: 2;
@@ -267,7 +267,7 @@
         grid-row-start: 2;
         grid-row-end: 3; } }
   .category__kids {
-    background-image: url("../images/categories-kids.png");
+    background-image: url("../images/categories-kids.jpg");
     background-repeat: no-repeat;
     grid-row-start: 1;
     grid-row-end: 2;
@@ -278,7 +278,7 @@
         grid-row-start: 3;
         grid-row-end: 4; } }
   .category__accessories {
-    background-image: url("../images/categories-accessories.png");
+    background-image: url("../images/categories-accessories.jpg");
     background-repeat: no-repeat;
     grid-row-start: 2;
     grid-row-end: 3;
@@ -393,17 +393,17 @@
     height: 100%;
     position: relative; }
   .product__card1 {
-    background: url("../images/product1.png") 100% no-repeat; }
+    background: url("../images/product1.jpg") 100% no-repeat; }
   .product__card2 {
-    background: url("../images/product2.png") 100% no-repeat; }
+    background: url("../images/product2.jpg") 100% no-repeat; }
   .product__card3 {
-    background: url("../images/product3.png") 100% no-repeat; }
+    background: url("../images/product3.jpg") 100% no-repeat; }
   .product__card4 {
-    background: url("../images/product4.png") 100% no-repeat; }
+    background: url("../images/product4.jpg") 100% no-repeat; }
   .product__card5 {
-    background: url("../images/product5.png") 100% no-repeat; }
+    background: url("../images/product5.jpg") 100% no-repeat; }
   .product__card6 {
-    background: url("../images/product6.png") 100% no-repeat; }
+    background: url("../images/product6.jpg") 100% no-repeat; }
   .product__photo {
     width: 100%;
     z-index: 0;
