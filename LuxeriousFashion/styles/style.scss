@@ -428,7 +428,7 @@
       margin: 0 auto;
       grid-gap: 16px;
     }
-    @media (max-width: 780px){
+    @media (max-width: 765px){
       grid-template-columns: repeat(1, 100%);
       grid-template-rows: repeat(6, 579.39px);
       max-width: none;
@@ -447,15 +447,15 @@
     line-height: 19px;
     background: none;
     color: $colorCoralPink;
-    margin: 48.5px auto;
+    margin: 48.5px auto 95.5px auto;
     position: relative;
     cursor: pointer;
     transition: 1s;
     @media (max-width: 1200px){
-      margin: 32.98px auto;
+      margin: 32.98px auto 65.02px auto;
     }
     @media (max-width: 375px){
-      margin: 41px auto;
+      margin: 41px auto 96.5px auto;
     }
     &:hover{
       background: $colorPink;
@@ -580,21 +580,10 @@
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
 .advantages {
   min-height: 340px;
   width: 100%;
-  background-color: $colorBlack;
+  background-color: $colorLightBlack;
 
   &__container {
     padding-bottom: 104px;
@@ -703,7 +692,7 @@
     font-size: 18px;
     line-height: 167.2%;
     text-align: center;
-    color: $colorBlack;
+    color: $colorLightBlack;
     &_bold{
       font-weight: 700;
       font-size: 24px;
@@ -728,7 +717,7 @@
       height: 100%;
       border: none;
       outline: none;
-      background-color: $colorGray;
+      background-color: $colorLightGray2;
       padding-left: 22px;
       padding-right: 22px;
     }
