@@ -27,7 +27,7 @@
   @media (max-width: 1202px) {
     padding: 0 32px;
   }
-  @media (max-width: 375px) {
+  @media (max-width: 380px) {
     padding: 0 16px;
   }
 
@@ -63,7 +63,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  @media (max-width: 375px) {
+  @media (max-width: 380px) {
     width: 32px;
     &__profile {
       display: none;
@@ -373,12 +373,26 @@
 .featured-items{
   display: flex;
   flex-direction: column;
+  -webkit-background-origin: border-box;
+  background-origin: border-box;
+  @media (max-width: 375px){
+    max-width: 359px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
   &__text{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 0 auto 57px auto;
+    margin: 0 auto 48px auto;
+    @media (max-width: 1150px){
+      margin: 0 auto 73.74px auto;
+    }
+    @media (max-width: 375px){
+      margin: 0 auto 64px auto;;
+    }
   }
   &__item{
     font-family: 'Lato';
@@ -404,7 +418,20 @@
     grid-gap: 30px;
     align-content: space-between;
     justify-content: space-between;
-    margin-bottom: 48.5px;
+    @media (max-width: 1200px){
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 581px);
+      max-width: 736px;
+      margin: 0 auto;
+      grid-gap: 16px;
+    }
+    @media (max-width: 780px){
+      grid-template-columns: repeat(1, 100%);
+      grid-template-rows: repeat(6, 579.39px);
+      max-width: none;
+      grid-gap: 16px;
+      padding: 0 8px;
+    }
   }
   &__btn{
     width: 211px;
@@ -415,11 +442,18 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
+    background: none;
     color: $colorCoralPink;
-    margin: 0 auto;
+    margin: 48.5px auto;
     position: relative;
     cursor: pointer;
     transition: 1s;
+    @media (max-width: 1200px){
+      margin: 32.98px auto;
+    }
+    @media (max-width: 375px){
+      margin: 41px auto;
+    }
     &:hover{
       background: $colorPink;
       color: $colorWhite;
@@ -434,12 +468,13 @@
 .product{
   display: flex;
   flex-direction: column;
+  width: 100%;
   &__card{
     width: 100%;
     height: 100%;
     position: relative;
   }
-  &__card1{
+  &__card-image1{
     background: url("../images/product1.jpg") 100% no-repeat;
   }
   &__card2{
@@ -479,7 +514,9 @@
     }
   }
   &__wrapper{
+    width: 100%;
     padding: 25.35px 28.8px 20px 18px;
+    background-color: $colorWhiteGray2;
   }
   &__name{
     font-family: 'Lato';
@@ -491,7 +528,7 @@
     margin-bottom: 16.35px;
   }
   &__description{
-    width: 314px;
+    max-width: 314px;
     height: 51px;
     font-family: 'Lato';
     font-style: normal;
