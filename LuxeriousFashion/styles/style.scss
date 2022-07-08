@@ -9,8 +9,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: Lato;
-
 }
 
 .container {
@@ -25,11 +23,11 @@
 .header {
   width: 100%;
   height: 75px;
-  background-color: $colorBlack;
+  background-color: $colorLightBlack;
   @media (max-width: 1202px) {
     padding: 0 32px;
   }
-  @media (max-width: 375px) {
+  @media (max-width: 380px) {
     padding: 0 16px;
   }
 
@@ -65,7 +63,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  @media (max-width: 375px) {
+  @media (max-width: 380px) {
     width: 32px;
     &__profile {
       display: none;
@@ -78,7 +76,7 @@
   &__profile {
     width: 29px;
     height: 29px;
-    background-image: url("../images/profile.png");
+    background-image: url("../images/profile.svg");
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
@@ -104,7 +102,7 @@
 .cart {
   width: 32px;
   height: 29px;
-  background-image: url("../images/card.png");
+  background-image: url("../images/card.svg");
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
@@ -236,7 +234,7 @@
     font-weight: 900;
     font-size: 48px;
     line-height: 42px;
-    color: $colorBlack;
+    color: $colorLightBlack;
     word-break: break-all;
     margin-top: 7px;
     @media (max-width: 1000px) {
@@ -255,7 +253,7 @@
       font-weight: 700;
       font-size: 31px;
       line-height: 32.2px;
-      color: $colorBlack;
+      color: $colorLightBlack;
       white-space: nowrap;
       margin: 0;
       @media (max-width: 1000px) {
@@ -297,28 +295,28 @@
   }
 
   &__women {
-    @include gridProductCategory("../images/categories-women.png");
-    @media (max-width: 500px) {
-      @include gridProductCategory375px(1, 2);
+    @include gridProductCategory("../images/categories-women.jpg");
+    @media (max-width: 500px){
+      @include gridProductCategory375px(1,2);
     }
   }
 
   &__men {
-    @include gridProductCategory("../images/categories-men.png");
-    @media (max-width: 500px) {
-      @include gridProductCategory375px(2, 3);
+    @include gridProductCategory("../images/categories-men.jpg");
+    @media (max-width: 500px){
+      @include gridProductCategory375px(2,3);
     }
   }
 
   &__kids {
-    @include gridProductCategory("../images/categories-kids.png");
-    @media (max-width: 500px) {
-      @include gridProductCategory375px(3, 4);
+    @include gridProductCategory("../images/categories-kids.jpg");
+    @media (max-width: 500px){
+      @include gridProductCategory375px(3,4);
     }
   }
 
   &__accessories {
-    @include gridProductCategory("../images/categories-accessories.png", 2, 3);
+    @include gridProductCategory("../images/categories-accessories.jpg",2,3);
     grid-column-start: 1;
     grid-column-end: 4;
     @media (max-width: 500px) {
@@ -375,11 +373,217 @@
     color: $colorPink;
   }
 }
+.featured-items{
+  display: flex;
+  flex-direction: column;
+  -webkit-background-origin: border-box;
+  background-origin: border-box;
+  @media (max-width: 375px){
+    max-width: 359px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  &__text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 48px auto;
+    @media (max-width: 1150px){
+      margin: 0 auto 73.74px auto;
+    }
+    @media (max-width: 375px){
+      margin: 0 auto 64px auto;;
+    }
+  }
+  &__item{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    color: $colorLightBlack;
+  }
+  &__description{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: $colorLightGray;
+  }
+  &__products{
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 581px);
+    grid-gap: 30px;
+    align-content: space-between;
+    justify-content: space-between;
+    @media (max-width: 1200px){
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 581px);
+      max-width: 736px;
+      margin: 0 auto;
+      grid-gap: 16px;
+    }
+    @media (max-width: 765px){
+      grid-template-columns: repeat(1, 100%);
+      grid-template-rows: repeat(6, 579.39px);
+      max-width: none;
+      grid-gap: 16px;
+      padding: 0 8px;
+    }
+  }
+  &__btn{
+    width: 211px;
+    height: 47px;
+    border: 1px solid $colorCoral;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    background: none;
+    color: $colorCoralPink;
+    margin: 48.5px auto 95.5px auto;
+    position: relative;
+    cursor: pointer;
+    transition: 1s;
+    @media (max-width: 1200px){
+      margin: 32.98px auto 65.02px auto;
+    }
+    @media (max-width: 375px){
+      margin: 41px auto 96.5px auto;
+    }
+    &:hover{
+      background: $colorPink;
+      color: $colorWhite;
+      transition: 1s;
+    }
+    &:active{
+      top: 1px;
+      left: 1px;
+    }
+  }
+}
+.product{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  &__card{
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  &__card-image1{
+    background: url("../images/product1.jpg") 100% no-repeat;
+  }
+  &__card2{
+    background: url("../images/product2.jpg") 100% no-repeat;
+  }
+  &__card3{
+    background: url("../images/product3.jpg") 100% no-repeat;
+  }
+  &__card4{
+    background: url("../images/product4.jpg") 100% no-repeat;
+  }
+  &__card5{
+    background: url("../images/product5.jpg") 100% no-repeat;
+  }
+  &__card6{
+    background: url("../images/product6.jpg") 100% no-repeat;
+  }
+  &__photo{
+    width: 100%;
+    z-index: 0;
+    display: block;
+  }
+  &__overlap{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background: rgba(58, 56, 56, 0.86);
+    opacity: 0;
+    transition: opacity 1s;
+    &:hover{
+      opacity: 1;
+      transition: opacity 1s;
+    }
+    &__img{
+
+    }
+  }
+  &__wrapper{
+    width: 100%;
+    padding: 25.35px 28.8px 20px 18px;
+    background-color: $colorWhiteGray2;
+  }
+  &__name{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: $colorBlack;
+    margin-bottom: 16.35px;
+  }
+  &__description{
+    max-width: 314px;
+    height: 51px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: $colorGray;
+    margin-bottom: 18px;
+  }
+  &__price{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: $colorPink;
+  }
+}
+.overlap{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__btn{
+    width: 138px;
+    height: 43px;
+    border: 1px solid $colorWhite;
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: $colorWhite;
+    position: relative;
+    cursor: pointer;
+    &:active{
+      top: 1px;
+      left: 1px;
+    }
+  }
+  &__img{
+    margin-right: 11px;
+  }
+}
 
 .advantages {
   min-height: 340px;
   width: 100%;
-  background-color: $colorBlack;
+  background-color: $colorLightBlack;
 
   &__container {
     padding-bottom: 104px;
@@ -488,7 +692,7 @@
     font-size: 18px;
     line-height: 167.2%;
     text-align: center;
-    color: $colorBlack;
+    color: $colorLightBlack;
     &_bold{
       font-weight: 700;
       font-size: 24px;
@@ -513,7 +717,7 @@
       height: 100%;
       border: none;
       outline: none;
-      background-color: $colorGray;
+      background-color: $colorLightGray2;
       padding-left: 22px;
       padding-right: 22px;
     }
