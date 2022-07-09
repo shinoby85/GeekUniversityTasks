@@ -639,4 +639,62 @@
     .subscribe .email__button:hover {
       opacity: 0.8; }
 
+.footer {
+  width: 100%;
+  height: 79px;
+  background-color: #222222;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  @media (max-width: 580px) {
+    .footer {
+      height: 143px; } }
+  .footer__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 32.5px; }
+    @media (max-width: 580px) {
+      .footer__container {
+        height: 100%;
+        flex-direction: column;
+        padding: 43px 0 9px 0; }
+        .footer__container div:last-child {
+          order: -1; } }
+  .footer__text {
+    width: 332px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFF; }
+    @media (max-width: 580px) {
+      .footer__text {
+        width: 251px; } }
+  .footer__buttons {
+    width: 149px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+  .footer__btn {
+    width: 32px;
+    height: 32px;
+    background-color: #FFF;
+    border: none;
+    outline: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    color: #000;
+    font-weight: bold;
+    transition: .5s; }
+    .footer__btn:hover {
+      background-color: #F16D7F;
+      color: #FFF;
+      transition: .5s; }
+
 /*# sourceMappingURL=style.css.map */

@@ -741,3 +741,67 @@
     }
   }
 }
+.footer{
+  width: 100%;
+  height: 79px;
+  background-color: $colorLightBlack;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media (max-width: 580px){
+    height: 143px;
+  }
+  &__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 32.5px;
+    @media (max-width: 580px){
+      height: 100%;
+      flex-direction: column;
+      padding: 43px 0 9px 0;
+      & div:last-child{
+        order: -1;
+      }
+    }
+  }
+  &__text{
+    width: 332px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: $colorWhite;
+    @media (max-width: 580px){
+      width: 251px;
+    }
+  }
+  &__buttons{
+    width: 149px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__btn{
+    width: 32px;
+    height: 32px;
+    background-color: $colorWhite;
+    border: none;
+    outline: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    color: $colorBlack;
+    font-weight: bold;
+    transition: .5s;
+    &:hover{
+      background-color: $colorPink;
+      color: $colorWhite;
+      transition: .5s;
+    }
+  }
+}
