@@ -837,14 +837,18 @@
     }
   }
   &__text{
+    & span{
+      color: $colorPink;
+    }
+  }
+  &__link{
+    cursor: pointer;
+    text-decoration: none;
     font-family: 'Lato';
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
     line-height: 17px;
     color: $colorMouseGrey;
-    & span{
-      color: $colorPink;
-    }
   }
 }

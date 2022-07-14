@@ -726,14 +726,16 @@
     @media (max-width: 500px) {
       .new-arrivals__title {
         margin-bottom: 32px; } }
-  .new-arrivals__text {
+  .new-arrivals__text span {
+    color: #F16D7F; }
+  .new-arrivals__link {
+    cursor: pointer;
+    text-decoration: none;
     font-family: 'Lato';
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
     line-height: 17px;
     color: #636363; }
-    .new-arrivals__text span {
-      color: #F16D7F; }
 
 /*# sourceMappingURL=style.css.map */
