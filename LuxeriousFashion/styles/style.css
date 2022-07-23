@@ -886,5 +886,14 @@
     text-decoration: none; }
     .catalog-pages__page_active {
       color: #F16D7F; }
+  .catalog-pages__page.points {
+    display: block;
+    position: relative; }
+  .catalog-pages__page.points::before {
+    content: ".....";
+    position: absolute;
+    top: 0;
+    left: -18px;
+    z-index: 5; }
 
 /*# sourceMappingURL=style.css.map */

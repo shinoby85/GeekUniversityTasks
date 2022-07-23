@@ -1012,6 +1012,18 @@
     &_active {
       color: $colorPink;
     }
+
+  }
+  &__page.points{
+    display: block;
+    position: relative;
+  }
+  &__page.points::before {
+    content: ".....";
+    position: absolute;
+    top: 0;
+    left: -18px;
+    z-index: 5;
   }
 }
 
