@@ -44,18 +44,86 @@
             <nav class="filter__nav">
                 <div class="filter__wrapper-left">
                     <p class="filter__text">FILTER</p>
-                    <div class="filter__menu"></div>
+                    <label class="filter__menu" for="popup"></label>
+                    <input id="popup" type="checkbox">
+                    <!--<label class="filter-popup-bg" for="popup"></label>-->
+                    <div class="filter__popup filter-popup">
+                        <div class="filter-popup__head">
+                            <p class="filter__text filter-popup__text_active">FILTER</p>
+                            <label class="filter__menu filter-popup__menu_active" for="popup"></label>
+                        </div>
+                        <ul class="filter-popup__nav popup-list">
+                            <li class="popup-list__group popup-list__group1">CATEGORY
+                                <ul class="popup-list__items">
+                                    <li class="popup-list__item">
+                                        <a class="popup-list__link" href="#">Accessories</a>
+                                    </li>
+                                    <li class="popup-list__item">
+                                        <a class="popup-list__link" href="#">Bags</a>
+                                    </li>
+                                    <li class="popup-list__item">
+                                        <a class="popup-list__link" href="#">Denim</a>
+                                    </li>
+                                    <li class="popup-list__item">
+                                        <a class="popup-list__link" href="#">Hoodies & Sweatshirts</a>
+                                    </li>
+                                    <li class="popup-list__item">
+                                        <a class="popup-list__link" href="#">Jackets & Coats</a>
+                                    </li>
+                                    <li class="popup-list__item">
+                                        <a class="popup-list__link" href="#">Polos</a>
+                                    </li>
+                                    <li class="popup-list__item">
+                                        <a class="popup-list__link" href="#">Shirts</a>
+                                    </li>
+                                    <li class="popup-list__item">
+                                        <a class="popup-list__link" href="#">Shoes</a>
+                                    </li>
+                                    <li class="popup-list__item">
+                                        <a class="popup-list__link" href="#">Sweaters & Knits</a>
+                                    </li>
+                                    <li class="popup-list__item">
+                                        <a class="popup-list__link" href="#">T-Shirts</a>
+                                    </li>
+                                    <li class="popup-list__item">
+                                        <a class="popup-list__link" href="#">Tanks</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="popup-list__group popup-list__group2">BRAND</li>
+                            <li class="popup-list__group popup-list__group3">DESIGNER</li>
+                        </ul>
+
+                    </div>
                 </div>
                 <div class="filter__category">
-                    <label class="filter__category-name filter__trending">TRENDING NOW
+                    <div class="filter__category-name filter-trending">TRENDING NOW
                         <button class="filter__category-btn"></button>
-                    </label>
-                    <label class="filter__category-name filter__size">SIZE
+                    </div>
+                    <div class="filter__category-name filter-size">SIZE
+                        <label  for="popup-size">
+                            <button class="filter__category-btn filter-size__btn">
+                                <input id="popup-size" type="checkbox">
+                                <div class="filter-size__popup size-popup">
+                                    <label class="size-popup__size-name">
+                                        <input class="size-popup__checkbox" type="checkbox">XS
+                                    </label>
+                                    <label class="size-popup__size-name">
+                                        <input class="size-popup__checkbox" type="checkbox">S
+                                    </label>
+                                    <label class="size-popup__size-name">
+                                        <input class="size-popup__checkbox" type="checkbox">M
+                                    </label>
+                                    <label class="size-popup__size-name">
+                                        <input class="size-popup__checkbox" type="checkbox">L
+                                    </label>
+                                </div>
+                            </button>
+                        </label>
+                    </div>
+                    <div class="filter__category-name filter-price">PRICE
                         <button class="filter__category-btn"></button>
-                    </label>
-                    <label class="filter__category-name filter__price">PRICE
-                        <button class="filter__category-btn"></button>
-                    </label>
+                    </div>
                 </div>
             </nav>
         </div>
