@@ -11,6 +11,10 @@
 <body>
 <input id="popup" type="checkbox">
 <label class="filter-popup-bg" for="popup"></label>
+<input id="popup-list1" type="checkbox">
+<input id="popup-list2" type="checkbox">
+<input id="popup-list3" type="checkbox">
+<input id="popup-size" type="checkbox">
 
 <header class="header">
     <div class="container header__container">
@@ -46,17 +50,16 @@
         <div class="catalog__filter filter">
             <nav class="filter__nav">
                 <div class="filter__wrapper-left">
-                    <p class="filter__text">FILTER</p>
+                    <label class="filter__text" for="popup">FILTER</label>
                     <label class="filter__menu" for="popup"></label>
-
-                    <!--<label class="filter-popup-bg" for="popup"></label>-->
                     <div class="filter__popup filter-popup">
                         <div class="filter-popup__head">
-                            <p class="filter__text filter-popup__text_active">FILTER</p>
+                            <label class="filter__text filter-popup__text_active" for="popup">FILTER</label>
                             <label class="filter__menu filter-popup__menu_active" for="popup"></label>
                         </div>
                         <ul class="filter-popup__nav popup-list">
-                            <li class="popup-list__group popup-list__group1">CATEGORY
+                            <li class="popup-list__group popup-list__group1">
+                                <label for="popup-list1">CATEGORY</label>
                                 <ul class="popup-list__items">
                                     <li class="popup-list__item">
                                         <a class="popup-list__link" href="#">Accessories</a>
@@ -93,8 +96,12 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li class="popup-list__group popup-list__group2">BRAND</li>
-                            <li class="popup-list__group popup-list__group3">DESIGNER</li>
+                            <li class="popup-list__group popup-list__group2">
+                                <label for="popup-list2">BRAND</label>
+                            </li>
+                            <li class="popup-list__group popup-list__group3">
+                                <label for="popup-list3">DESIGNER</label>
+                                </li>
                         </ul>
 
                     </div>
@@ -103,10 +110,10 @@
                     <div class="filter__category-name filter-trending">TRENDING NOW
                         <button class="filter__category-btn"></button>
                     </div>
-                    <div class="filter__category-name filter-size">SIZE
-                        <label  for="popup-size">
+                    <div class="filter__category-name filter-size">
+                        <label class="filter-size__popup-size" for="popup-size">SIZE</label>
+                        <label class="filter-size__popup-size" for="popup-size">
                             <button class="filter__category-btn filter-size__btn">
-                                <input id="popup-size" type="checkbox">
                                 <div class="filter-size__popup size-popup">
                                     <label class="size-popup__size-name">
                                         <input class="size-popup__checkbox" type="checkbox">XS

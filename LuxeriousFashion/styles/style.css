@@ -25,6 +25,18 @@
 #popup:checked ~ .main .catalog .filter__wrapper-left .filter-popup {
   display: block; }
 
+#popup-list1, #popup-list2, #popup-list3 {
+  display: none; }
+
+#popup-list1:checked ~ .main .catalog .filter__wrapper-left .filter-popup .popup-list .popup-list__group .popup-list__items {
+  display: block; }
+
+#popup-size {
+  display: none; }
+
+#popup-size:checked ~ .main .catalog .filter__category .size-popup {
+  display: flex; }
+
 .container {
   width: 100%;
   max-width: 1140px;
@@ -788,21 +800,7 @@
 
 .filter {
   height: 17px;
-  position: relative;
-  /* &-popup-bg{
-     display: none;
-     width: 100vw;
-     height: 100vh;
-     position: absolute;
-     left: 0;
-     top: 0;
-     background-color: rgba(0,0,0,.6);
-     z-index: 1;
-   }*/
-  /*#popup:checked ~ .filter-popup-bg,*/
-  /*  #popup:checked ~ .filter-popup{
-      display: block;
-    }*/ }
+  position: relative; }
   .filter__nav {
     display: flex;
     justify-content: space-between; }
@@ -817,7 +815,8 @@
     font-weight: 600;
     font-size: 14px;
     line-height: 17px;
-    color: #000; }
+    color: #000;
+    cursor: pointer; }
     @media (max-width: 460px) {
       .filter__text {
         display: none; } }
@@ -900,6 +899,8 @@
     color: #636363;
     margin-bottom: 34px;
     position: relative; }
+    .popup-list__group label {
+      cursor: pointer; }
     .popup-list__group:before {
       content: '';
       position: absolute;
@@ -927,8 +928,6 @@
           background-color: #e5e5e5; } }
     .popup-list__group:hover {
       color: #F16D7F; }
-    .popup-list__group:hover > .popup-list__items {
-      display: block; }
   .popup-list__items {
     list-style-type: none;
     margin-top: 34px;
@@ -950,6 +949,8 @@
       opacity: 1;
       transition: opacity .5s; }
 
+.filter-size__popup-size {
+  cursor: pointer; }
 .filter-size__btn {
   position: relative; }
 .filter-size__popup {
@@ -959,12 +960,6 @@
   z-index: 2;
   top: 17px;
   left: -50px; }
-
-#popup-size {
-  display: none; }
-
-#popup-size:checked ~ .size-popup {
-  display: flex; }
 
 .size-popup {
   display: none;
