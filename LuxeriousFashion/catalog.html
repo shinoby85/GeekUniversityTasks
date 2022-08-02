@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Catalog</title>
+    <link href="./styles/style.css" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/75b63d5a0c.js"></script>
+</head>
+<body>
+<input id="popup" type="checkbox">
+<label class="filter-popup-bg" for="popup"></label>
+<input id="popup-list1" type="checkbox">
+<input id="popup-list2" type="checkbox">
+<input id="popup-list3" type="checkbox">
+<input id="popup-size" type="checkbox">
+
+<header class="header">
+    <div class="container header__container">
+        <div class="header__left">
+            <img class="header__logo" src="images/logo.svg" alt="Logo">
+            <img class="header__search" src="images/search.svg" alt="Search">
+        </div>
+        <nav class="header__nav nav">
+            <menu class="nav__menu menu">
+                <div class="menu__line"></div>
+                <div class="menu__line"></div>
+                <div class="menu__line"></div>
+            </menu>
+            <div class="nav__profile"></div>
+            <div class="nav__cart cart">
+                <div class="cart__quantity">5</div>
+            </div>
+        </nav>
+    </div>
+</header>
+<main class="main">
+    <div class="new-arrivals">
+        <div class="new-arrivals__wrapper container">
+            <h3 class="new-arrivals__title">NEW ARRIVALS</h3>
+            <div class="new-arrivals__text">
+                <a class="new-arrivals__link" href="index.html">HOME /</a>
+                <a class="new-arrivals__link" href="#">MEN /</a>
+                <span>NEW ARRIVALS</span>
+            </div>
+        </div>
+    </div>
+    <div class="catalog container">
+        <div class="catalog__filter filter">
+            <nav class="filter__nav">
+                <div class="filter__wrapper-left">
+                    <label class="filter__text" for="popup">FILTER</label>
+                    <label class="filter__menu" for="popup"></label>
+                    <div class="filter__popup filter-popup">
+                        <div class="filter-popup__head">
+                            <label class="filter__text filter-popup__text_active" for="popup">FILTER</label>
+                            <label class="filter__menu filter-popup__menu_active" for="popup"></label>
+                        </div>
+                        <ul class="filter-popup__nav popup-list">
+                            <li class="popup-list__group popup-list__group1">
+                                <label for="popup-list1">CATEGORY</label>
+                                <ul class="popup-list__items">
+                                    <li class="popup-list__item">
+                                        <a class="popup-list__link" href="#">Accessories</a>
+                                    </li>
+                                    <li class="popup-list__item">
+                                        <a class="popup-list__link" href="#">Bags</a>
+                                    </li>
+                                    <li class="popup-list__item">
+                                        <a class="popup-list__link" href="#">Denim</a>
+                                    </li>
+                                    <li class="popup-list__item">
+                                        <a class="popup-list__link" href="#">Hoodies & Sweatshirts</a>
+                                    </li>
+                                    <li class="popup-list__item">
+                                        <a class="popup-list__link" href="#">Jackets & Coats</a>
+                                    </li>
+                                    <li class="popup-list__item">
+                                        <a class="popup-list__link" href="#">Polos</a>
+                                    </li>
+                                    <li class="popup-list__item">
+                                        <a class="popup-list__link" href="#">Shirts</a>
+                                    </li>
+                                    <li class="popup-list__item">
+                                        <a class="popup-list__link" href="#">Shoes</a>
+                                    </li>
+                                    <li class="popup-list__item">
+                                        <a class="popup-list__link" href="#">Sweaters & Knits</a>
+                                    </li>
+                                    <li class="popup-list__item">
+                                        <a class="popup-list__link" href="#">T-Shirts</a>
+                                    </li>
+                                    <li class="popup-list__item">
+                                        <a class="popup-list__link" href="#">Tanks</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="popup-list__group popup-list__group2">
+                                <label for="popup-list2">BRAND</label>
+                            </li>
+                            <li class="popup-list__group popup-list__group3">
+                                <label for="popup-list3">DESIGNER</label>
+                                </li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="filter__category">
+                    <div class="filter__category-name filter-trending">TRENDING NOW
+                        <button class="filter__category-btn"></button>
+                    </div>
+                    <div class="filter__category-name filter-size">
+                        <label class="filter-size__popup-size" for="popup-size">SIZE</label>
+                        <label class="filter-size__popup-size" for="popup-size">
+                            <button class="filter__category-btn filter-size__btn">
+                                <div class="filter-size__popup size-popup">
+                                    <label class="size-popup__size-name">
+                                        <input class="size-popup__checkbox" type="checkbox">XS
+                                    </label>
+                                    <label class="size-popup__size-name">
+                                        <input class="size-popup__checkbox" type="checkbox">S
+                                    </label>
+                                    <label class="size-popup__size-name">
+                                        <input class="size-popup__checkbox" type="checkbox">M
+                                    </label>
+                                    <label class="size-popup__size-name">
+                                        <input class="size-popup__checkbox" type="checkbox">L
+                                    </label>
+                                </div>
+                            </button>
+                        </label>
+                    </div>
+                    <div class="filter__category-name filter-price">PRICE
+                        <button class="filter__category-btn"></button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="catalog__product products">
+            <article class="product">
+                <div class="product__card catalog-product__card-image1">
+                    <div class="product__overlap overlap">
+                        <button class="overlap__btn">
+                            <img class="overlap__img" src="images/basket.svg" alt="Basket">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+                <div class="product__wrapper">
+                    <p class="product__name">ELLERY X M'O CAPSULE</p>
+                    <p class="product__description">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                    <p class="product__price">$52.00</p>
+                </div>
+            </article>
+            <article class="product">
+                <div class="product__card catalog-product__card-image2">
+                    <div class="product__overlap overlap">
+                        <button class="overlap__btn">
+                            <img class="overlap__img" src="images/basket.svg" alt="Basket">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+                <div class="product__wrapper">
+                    <p class="product__name">ELLERY X M'O CAPSULE</p>
+                    <p class="product__description">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                    <p class="product__price">$52.00</p>
+                </div>
+            </article>
+            <article class="product">
+                <div class="product__card catalog-product__card-image3">
+                    <div class="product__overlap overlap">
+                        <button class="overlap__btn">
+                            <img class="overlap__img" src="images/basket.svg" alt="Basket">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+                <div class="product__wrapper">
+                    <p class="product__name">ELLERY X M'O CAPSULE</p>
+                    <p class="product__description">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                    <p class="product__price">$52.00</p>
+                </div>
+            </article>
+            <article class="product">
+                <div class="product__card catalog-product__card-image4">
+                    <div class="product__overlap overlap">
+                        <button class="overlap__btn">
+                            <img class="overlap__img" src="images/basket.svg" alt="Basket">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+                <div class="product__wrapper">
+                    <p class="product__name">ELLERY X M'O CAPSULE</p>
+                    <p class="product__description">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                    <p class="product__price">$52.00</p>
+                </div>
+            </article>
+            <article class="product">
+                <div class="product__card catalog-product__card-image5">
+                    <div class="product__overlap overlap">
+                        <button class="overlap__btn">
+                            <img class="overlap__img" src="images/basket.svg" alt="Basket">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+                <div class="product__wrapper">
+                    <p class="product__name">ELLERY X M'O CAPSULE</p>
+                    <p class="product__description">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                    <p class="product__price">$52.00</p>
+                </div>
+            </article>
+            <article class="product">
+                <div class="product__card catalog-product__card-image6">
+                    <div class="product__overlap overlap">
+                        <button class="overlap__btn">
+                            <img class="overlap__img" src="images/basket.svg" alt="Basket">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+                <div class="product__wrapper">
+                    <p class="product__name">ELLERY X M'O CAPSULE</p>
+                    <p class="product__description">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                    <p class="product__price">$52.00</p>
+                </div>
+            </article>
+            <article class="product">
+                <div class="product__card catalog-product__card-image7">
+                    <div class="product__overlap overlap">
+                        <button class="overlap__btn">
+                            <img class="overlap__img" src="images/basket.svg" alt="Basket">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+                <div class="product__wrapper">
+                    <p class="product__name">ELLERY X M'O CAPSULE</p>
+                    <p class="product__description">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                    <p class="product__price">$52.00</p>
+                </div>
+            </article>
+            <article class="product">
+                <div class="product__card catalog-product__card-image8">
+                    <div class="product__overlap overlap">
+                        <button class="overlap__btn">
+                            <img class="overlap__img" src="images/basket.svg" alt="Basket">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+                <div class="product__wrapper">
+                    <p class="product__name">ELLERY X M'O CAPSULE</p>
+                    <p class="product__description">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                    <p class="product__price">$52.00</p>
+                </div>
+            </article>
+            <article class="product">
+                <div class="product__card catalog-product__card-image9">
+                    <div class="product__overlap overlap">
+                        <button class="overlap__btn">
+                            <img class="overlap__img" src="images/basket.svg" alt="Basket">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+                <div class="product__wrapper">
+                    <p class="product__name">ELLERY X M'O CAPSULE</p>
+                    <p class="product__description">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                    <p class="product__price">$52.00</p>
+                </div>
+            </article>
+        </div>
+        <div class="catalog__pages catalog-pages">
+            <button class="catalog-pages__btn">&#8249;</button>
+            <a href="catalog.html" class="catalog-pages__page catalog-pages__page_active">1</a>
+            <a href="#" class="catalog-pages__page">2</a>
+            <a href="#" class="catalog-pages__page">3</a>
+            <a href="#" class="catalog-pages__page">4</a>
+            <a href="#" class="catalog-pages__page">5</a>
+            <a href="#" class="catalog-pages__page">6</a>
+            <a href="#" class="catalog-pages__page points">20</a>
+            <button class="catalog-pages__btn">&#8250;</button>
+        </div>
+    </div>
+</main>
+<section class="advantages">
+    <div class="container advantages__container">
+        <div class="advantages__item">
+            <img src="./icons/Car.svg" alt="icon" class="advantages__icon" width="45">
+            <h3 class="advantages__title">Free Delivery</h3>
+            <p class="advantages__text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with
+                extensive models.</p>
+        </div>
+        <div class="advantages__item">
+            <img src="./icons/Discont.svg" alt="icon" class="advantages__icon" width="45">
+            <h3 class="advantages__title">Sales & discounts</h3>
+            <p class="advantages__text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with
+                extensive models.</p>
+        </div>
+        <div class="advantages__item">
+            <img src="./icons/Qualitu.svg" alt="icon" class="advantages__icon" width="45">
+            <h3 class="advantages__title">Quality assurance</h3>
+            <p class="advantages__text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with
+                extensive models.</p>
+        </div>
+    </div>
+</section>
+<section class="subscribe">
+    <div class="container subscribe__container">
+        <div class="subscribe__side">
+            <div class="subscribe__image-wrapper">
+                <img src="./images/person-1.jpg" alt="person image" class="subscribe__image">
+            </div>
+            <p class="subscribe__quote">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, <span
+                    class="quote_italic"> a pulvinar purus condimentum</span>“</p>
+        </div>
+        <div class="subscribe__side">
+            <p class="subscribe__text"><div class="subscribe__text_bold">SUBSCRIBE</div> FOR OUR NEWLETTER AND PROMOTION</p>
+            <form class="email__wrapper" >
+                <input type="email" class="email__input" placeholder="Enter Your Email" required>
+                <input type="submit" class="email__button" value="Subscribe">
+            </form>
+        </div>
+
+    </div>
+</section>
+<footer class="footer">
+    <div class="container footer__container">
+        <div class="footer__text">© 2021  Brand  All Rights Reserved.</div>
+        <div class="footer__buttons">
+            <div class="footer__btn"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+            <div class="footer__btn"><i class="fa fa-instagram" aria-hidden="true"></i></div>
+            <div class="footer__btn"><i class="fa fa-pinterest-p" aria-hidden="true"></i></div>
+            <div class="footer__btn"><i class="fa fa-twitter" aria-hidden="true"></i></div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

@@ -10,3 +10,12 @@
   grid-row-start: $grs;
   grid-row-end: $gre;
 }
+@mixin popupListGroupAfter($top,$left,$width){
+  content: '';
+  position: absolute;
+  left: $left;
+  top: $top;
+  width: $width;
+  height: 1px;
+  background-color: $colorWhiteGray;
+}
